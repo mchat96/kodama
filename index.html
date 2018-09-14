@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ECHO</title>
+		<meta charset = "UTF-8">
+                <script src="js/kodama.js" type="text/javascript"></script>
+                <script src="js/jquely.js" type="text/javascript"></script>
+                <link rel="stylesheet" type="text/css" href="css.css">
+                
+
+                <!-- <script type="text/javascript" src="./footerFixed.js"></script> -->
+                
+                <!-- <script type="text/javascript">
+ 
+     $(function(){
+          
+     });
+ 
+</script> -->
+
+
+	</head>
+	<body>
+        <h2>ECHO</h2>
+        <p>こだまちゃんとおしゃべりして頭のなかを整理しよう。<br>
+        ラジオボタンで人物の切り替えが可能。再読み込みでリセット。<br>
+        -----------------------------------------------------
+        </p>
+        <br>        
+        <div id="chatarea">
+        </div>
+        <br>        
+        <p>-----------------------------------------------------</p>
+        <form name="js" method="post" >
+        <input type="radio" name="name" value="1">こだま　
+        <input type="radio" name="name" value="2">じぶん<br> <!-- valueを変数にして任意の名前にできてもいいよね。後ほどここはセレクトボックスにし、任意変更できるようにするとかどやろか。 -->
+        <textarea rows="1" name="chat"></textarea>
+        <!-- DB使うのであれば、kodama部分で上記セレクトボックスの値を受け取って判断し他人になる。        -->
+        <input type="button" value="pon" onclick="p();">      
+        <input type="button" value="cleen" onclick="ad();">
+        <!--ずらずらchatareaに表示されたチャットを全消しするボタン（チャットとして格納された配列を空にするなど） -->
+        
+        
+        </form>
+        <p>-----------------------------------------------------</p>
+       <p id="footer">Copyright © 2018 enochan All Rights Reserved.</p>
+
+
+	</body>
+</html>
